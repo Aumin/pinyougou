@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>内置服务</title>
+<script type="text/javascript" src="plugins/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('pyg',[]);
+	
+	app.controller('helloangular',function($scope,$http){
+		$scope.findAll = function(){
+			$http.get('data.json').success(function(data){
+				$scope.list = data;
+			});
+				
+		}
+	});
+
+</script>
+
+</head>
+<body ng-app="pyg" ng-controller="helloangular" ng-init="findAll()">
+	<table>
+		<tr ng-repeat="student in list">
+			<td>{{student.name}}</td>
+			<td>{{student.shuxue}}</td>
+			<td>{{student.yuwen}}</td>	
+		</tr>
+	</table>
+
+
+</body>
+</html>

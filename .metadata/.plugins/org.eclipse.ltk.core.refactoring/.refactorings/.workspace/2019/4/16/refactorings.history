@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;pyg-manager-service&apos;" deleteContents="true" description="Delete resource &apos;pyg-manager-service&apos;" element1="/pyg-manager-service" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1555210769367"/>&#x0A;<refactoring comment="Delete resource &apos;pyg-manager-web&apos;" deleteContents="true" description="Delete resource &apos;pyg-manager-web&apos;" element1="/pyg-manager-web" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1555212374519"/>
+</session>
