@@ -1,6 +1,8 @@
 package top.pyg.mapper;
 
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import top.pyg.pojo.TbTypeTemplate;
 import top.pyg.pojo.TbTypeTemplateExample;
@@ -27,4 +29,6 @@ public interface TbTypeTemplateMapper {
     int updateByPrimaryKeySelective(TbTypeTemplate record);
 
     int updateByPrimaryKey(TbTypeTemplate record);
+    
+    
 }

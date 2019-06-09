@@ -1,6 +1,7 @@
 package top.pyg.manager.service;
 
 import java.util.List;
+import java.util.Map;
 
 import top.pyg.pojo.TbBrand;
 import top.pyg.utils.PageResult;
@@ -35,6 +36,9 @@ public interface BrandService {
 	//删除品牌信息
 	public PygResult delete(Long[] ids);
 	
-	
+	/**
+	 * 品牌下拉框
+	 */
+	public List<Map> selectOptionList();
 	
 }

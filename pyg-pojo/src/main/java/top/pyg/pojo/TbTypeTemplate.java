@@ -1,7 +1,14 @@
 package top.pyg.pojo;
 
-public class TbTypeTemplate {
-    private Long id;
+import java.io.Serializable;
+
+public class TbTypeTemplate implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 282978665346498619L;
+
+	private Long id;
 
     private String name;
 

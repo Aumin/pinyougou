@@ -1,7 +1,14 @@
 package top.pyg.pojo;
 
-public class TbSpecification {
-    private Long id;
+import java.io.Serializable;
+
+public class TbSpecification implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2354451697694267981L;
+
+	private Long id;
 
     private String specName;
 

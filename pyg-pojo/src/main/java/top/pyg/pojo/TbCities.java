@@ -1,7 +1,14 @@
 package top.pyg.pojo;
 
-public class TbCities {
-    private Integer id;
+import java.io.Serializable;
+
+public class TbCities implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6549099219419099386L;
+
+	private Integer id;
 
     private String cityid;
 

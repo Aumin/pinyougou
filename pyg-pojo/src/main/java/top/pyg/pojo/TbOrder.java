@@ -1,10 +1,16 @@
 package top.pyg.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class TbOrder {
-    private Long orderId;
+public class TbOrder implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5084213988472026431L;
+
+	private Long orderId;
 
     private BigDecimal payment;
 

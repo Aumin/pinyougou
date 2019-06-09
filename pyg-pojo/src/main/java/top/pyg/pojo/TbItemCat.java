@@ -1,7 +1,14 @@
 package top.pyg.pojo;
 
-public class TbItemCat {
-    private Long id;
+import java.io.Serializable;
+
+public class TbItemCat implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8389985655347152829L;
+
+	private Long id;
 
     private Long parentId;
 

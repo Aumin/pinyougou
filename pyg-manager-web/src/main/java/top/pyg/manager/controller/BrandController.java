@@ -1,6 +1,7 @@
 package top.pyg.manager.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -104,6 +105,11 @@ public class BrandController {
 	public PygResult delete(Long[] ids) {
 		PygResult result = brandService.delete(ids);
 		return result;
+	}
+	
+	@RequestMapping("/selectOptionList")
+	public List<Map> selectOptionList(){
+		return brandService.selectOptionList();
 	}
 
 }

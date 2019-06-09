@@ -2,6 +2,7 @@ package top.pyg.manager.service.impl;
 
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -150,5 +151,12 @@ public class BrandServiceImpl implements BrandService {
 			return new PygResult(false, "删除失败");
 		}
 		
+	}
+
+	@Override
+	public List<Map> selectOptionList() {
+		// TODO Auto-generated method stub
+		List<Map> optionList = brandMapper.selectOptionList();
+		return optionList;
 	}
 }

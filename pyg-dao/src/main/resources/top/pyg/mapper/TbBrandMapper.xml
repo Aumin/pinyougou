@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="top.pyg.mapper.TbBrandMapper" >
   <resultMap id="BaseResultMap" type="top.pyg.pojo.TbBrand" >
     <id column="id" property="id" jdbcType="BIGINT" />
@@ -86,6 +86,9 @@
     <include refid="Base_Column_List" />
     from tb_brand
     where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectOptionList" resultType="java.util.Map">
+  	select id,name as text from tb_brand
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from tb_brand
